@@ -88,6 +88,7 @@ def downloadCsv(csv_links, ticker, *file_names):
 		with urllib.request.urlopen(url) as response, open(file_name+'.csv', 'wb') as file:
 			data = response.read()
 			file.write(data)
+	return None
 
 def getTickerData(base_url, value=None, *file_names):
 	'''
@@ -100,3 +101,5 @@ def getTickerData(base_url, value=None, *file_names):
 	return None
 
 
+if __name__ == '__main__':
+	getTickerData(yahoo_base_url, 'goog', 'google')

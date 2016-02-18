@@ -24,8 +24,8 @@ def getCsvLink(links):
 def downloadCsv(url_csv, ticker):
 	for url in url_csv:
 		with urllib.request.urlopen(url) as response, open(ticker+'.csv', 'wb') as file:
-				data = response.read()
-				file.write(data)
+			data = response.read()
+			file.write(data)
 
 
 

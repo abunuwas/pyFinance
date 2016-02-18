@@ -1,2 +1,4 @@
 beautifulsoup4==4.4.1
+psycopg2==2.6.1
+SQLAlchemy==1.0.12
 wheel==0.29.0
